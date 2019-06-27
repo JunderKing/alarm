@@ -20,6 +20,9 @@ class Alarm extends Model
         // audience
         $pusher->addAllAudience();
         // notification
+        $pusher->androidNotification($content, [
+            'title' => $title,
+        ]);
         $pusher->iosNotification(['title' => $title, 'body' => $content], [
             'sound' => 'default',
             'badge' => '+1',
