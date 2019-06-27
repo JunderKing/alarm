@@ -16,7 +16,7 @@ class Alarm extends Model
         $client = new JPush($appKey, $masterSecret, $logPath);
         $pusher = $client->push();
         // platform
-        $pusher->setPlatform('ios');
+        $pusher->setPlatform('all');
         // audience
         $pusher->addAllAudience();
         // notification
