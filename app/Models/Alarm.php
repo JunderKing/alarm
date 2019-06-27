@@ -22,6 +22,7 @@ class Alarm extends Model
         // notification
         $pusher->androidNotification($content, [
             'title' => $title,
+            'style' => 1,
         ]);
         $pusher->iosNotification(['title' => $title, 'body' => $content], [
             'sound' => 'default',
