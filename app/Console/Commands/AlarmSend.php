@@ -38,6 +38,8 @@ class AlarmSend extends Command
      */
     public function handle()
     {
-        Models\Alarm::send();
+        $title = 'TEST';
+        $content = '2015年8月24日 - 极光推送是比较专业的一款推送工具,当然觉得极光推送有难度的开发者可以使用很多其他...上一篇[学习]安卓开发app实现自动更新version.xml正确的书写方...';
+        Models\Alarm::send($title, $content);
     }
 }
