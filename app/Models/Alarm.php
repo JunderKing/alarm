@@ -19,7 +19,7 @@ class Alarm extends Model
         $pusher->setPlatform('all');
         // audience
 //         $pusher->addAllAudience();
-//        $pusher->addRegistrationId('1a0018970a03ed9d6b3');
+        $pusher->addRegistrationId('1a0018970a03ed9d6b3');
         $pusher->addRegistrationId('18071adc03a596b211b');
         // notification
         $pusher->androidNotification($content, [
