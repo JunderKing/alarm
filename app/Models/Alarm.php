@@ -22,6 +22,7 @@ class Alarm extends Model
         $pusher->addRegistrationId('1a0018970a03ed9d6b3');
         $pusher->addRegistrationId('18071adc03a596b211b');
         $pusher->addRegistrationId('13065ffa4ea54ea92ea');
+        $pusher->addRegistrationId('160a3797c8d3c0cd462');
         // notification
         $pusher->androidNotification($content, [
             'title' => $title,
